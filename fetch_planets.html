@@ -6,6 +6,7 @@
                 fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response){
                     response.json().then(function(json) {
                         const destination = document.getElementById("destination");
+                        let index = 0;
                         destination.addEventListener("click", function(){
                             destination.innerHTML = `
                                 <div>
